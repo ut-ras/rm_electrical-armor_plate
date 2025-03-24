@@ -1,14 +1,22 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "00ff5194-078d-47e1-a4f1-0a39a16ee3f5")
 	(paper "A4")
+	(title_block
+		(title "Armor Plate Mockup")
+		(company "UT IEEE RAS - Stampede")
+	)
 	(lib_symbols
 		(symbol "Device:Battery_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -91,7 +99,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -103,7 +111,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -176,11 +184,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -248,10 +261,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -272,7 +297,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -284,22 +309,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -345,9 +358,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -418,18 +434,6 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
@@ -442,7 +446,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -466,7 +470,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -515,6 +531,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -597,10 +614,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_SP3T"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -690,7 +710,7 @@
 					)
 				)
 				(circle
-					(center 2.032 -2.54)
+					(center 2.032 2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -712,7 +732,7 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
+					(center 2.032 -2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -733,6 +753,24 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
@@ -772,24 +810,6 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "4"
@@ -808,12 +828,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -904,215 +929,300 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 19.05 19.05)
+		(end 60.96 36.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 11dc554e-f14d-4305-ba28-64072d332d2e)
+	)
+	(rectangle
+		(start 19.05 39.37)
+		(end 139.7 161.29)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 58e20dd3-2425-4af4-bcfa-b5bcd450dee1)
+	)
+	(text "Lights"
+		(exclude_from_sim no)
+		(at 20.32 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20313e75-119b-4ceb-8a69-437c0ba8f856")
+	)
+	(text "Blue LED"
+		(exclude_from_sim no)
+		(at 87.884 69.342 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "28f72dae-9614-4ebd-a94e-af61760dfaf6")
+	)
+	(text "Red LED"
+		(exclude_from_sim no)
+		(at 46.99 69.596 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4bd9b01c-b6c3-44e2-bc30-f72d3288d402")
+	)
+	(text "TODO:\n- Find Specific LED on Mouser\n- Tie together LED Cathodes\n- Replace LED Cathode Resistors with singular resistor"
+		(exclude_from_sim no)
+		(at 34.798 75.692 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "4c459db8-c453-4e0f-8d46-5f2d912ab720")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 19.812 21.336 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e36c8271-3a31-42fa-90e6-a29ec2bb8767")
+	)
 	(junction
-		(at 71.12 120.65)
+		(at 46.99 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "088aee0e-bc5d-4458-9ce7-205c43554ba2")
 	)
 	(junction
-		(at 201.93 109.22)
+		(at 107.95 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13030e18-24bc-4727-8918-5190587944c5")
 	)
 	(junction
-		(at 184.15 121.92)
+		(at 82.55 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c45f06b-0173-4bb1-8cbc-06fd778961ee")
 	)
 	(junction
-		(at 165.1 60.96)
+		(at 72.39 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "39bd6375-21b5-4f40-9890-1b9e833b4b03")
+		(uuid "3839b7d5-43b6-4e17-b33a-515c94bc727e")
 	)
 	(junction
-		(at 168.91 96.52)
+		(at 67.31 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dfe10f8-4e21-4096-b2bc-311551b77f99")
 	)
 	(junction
-		(at 104.14 107.95)
+		(at 87.63 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4534b997-7656-4843-8bd7-f492ceb8ebdb")
 	)
 	(junction
-		(at 86.36 95.25)
+		(at 62.23 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46ba458e-e555-4496-97c2-f99db338613b")
 	)
 	(junction
-		(at 168.91 109.22)
+		(at 67.31 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5283c579-c1e0-49c1-b4cc-7e70299ccb3b")
 	)
 	(junction
-		(at 119.38 107.95)
+		(at 102.87 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58e2b775-f209-4fd2-8091-47203e7bae12")
 	)
 	(junction
-		(at 104.14 120.65)
+		(at 87.63 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64f8174c-1b6b-4cf3-b0b1-5db21f430ab8")
 	)
 	(junction
-		(at 201.93 96.52)
+		(at 107.95 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71e1a47b-b55d-4590-8a83-b822aa5d9dba")
 	)
 	(junction
-		(at 71.12 107.95)
+		(at 46.99 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74368307-b3d6-4a4d-a162-d84cd26eaeda")
 	)
 	(junction
-		(at 119.38 95.25)
+		(at 102.87 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8009d83d-c382-4a49-baa6-f85237b536ab")
 	)
 	(junction
-		(at 184.15 83.82)
+		(at 82.55 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87e96c28-51a0-4440-a7db-7ba16533608f")
 	)
 	(junction
-		(at 217.17 121.92)
+		(at 123.19 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "895f039b-92ff-40aa-8733-7f7aac7f72f0")
 	)
 	(junction
-		(at 132.08 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e69b1ef-41b1-4b0b-9dc2-f414b9bfd039")
-	)
-	(junction
-		(at 201.93 121.92)
+		(at 107.95 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93692892-3170-486e-b626-f7f79294cedf")
 	)
 	(junction
-		(at 71.12 95.25)
+		(at 46.99 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96ab02be-7a8e-4492-8c3b-cc169c5f2a41")
 	)
 	(junction
-		(at 71.12 133.35)
+		(at 46.99 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "990dd81c-570d-4258-81d0-b16489c19d70")
 	)
 	(junction
-		(at 104.14 133.35)
+		(at 87.63 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a661e5d-44d5-4b28-b634-41fd9322a50a")
 	)
 	(junction
-		(at 168.91 121.92)
+		(at 67.31 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0f3a4d1-a01f-48b0-b345-05ee5e56dd8b")
 	)
 	(junction
-		(at 86.36 120.65)
+		(at 113.03 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa74b8cc-a741-4a52-9736-46ae644a4e2e")
+	)
+	(junction
+		(at 62.23 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b933fe18-7180-49e0-b171-ef1c91784f06")
 	)
 	(junction
-		(at 86.36 82.55)
+		(at 62.23 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2b4d2c1-3b38-43d1-a920-deedd44b290c")
 	)
 	(junction
-		(at 184.15 96.52)
+		(at 82.55 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c54bc5ac-6371-4182-9690-73279c3b55df")
 	)
 	(junction
-		(at 86.36 107.95)
+		(at 62.23 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9e93b51-aa61-4cc5-afd2-4a16872b6e14")
 	)
 	(junction
-		(at 104.14 95.25)
+		(at 87.63 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d45b690d-b33e-4aa9-b238-29d90166620a")
 	)
 	(junction
-		(at 168.91 134.62)
+		(at 67.31 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d73f84f1-8b1b-4c5b-b855-f0d79419da12")
 	)
 	(junction
-		(at 217.17 96.52)
+		(at 123.19 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd228010-2b7a-4a4f-bbed-71c859d85c02")
 	)
 	(junction
-		(at 184.15 109.22)
+		(at 82.55 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e14aa008-f126-4156-addb-2d642d35ca7b")
 	)
 	(junction
-		(at 217.17 109.22)
+		(at 123.19 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee7fd0bb-6bd8-424e-9cef-fc826700ed5c")
 	)
 	(junction
-		(at 201.93 134.62)
+		(at 107.95 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2b0983b-8c0a-4c0d-9828-1e8bb870dadd")
 	)
 	(junction
-		(at 119.38 82.55)
+		(at 102.87 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f41b2dd3-5b4f-4fba-a798-4d0692c7e7d9")
 	)
 	(junction
-		(at 217.17 83.82)
+		(at 123.19 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f50bfa07-3000-4a45-b75b-bb31dc73e085")
 	)
 	(junction
-		(at 119.38 120.65)
+		(at 102.87 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9184995-2c21-42c5-9a85-ced1b1779ac9")
 	)
+	(no_connect
+		(at 92.71 59.69)
+		(uuid "7df2ccc4-66b6-42b1-a8fd-1c15174c5d40")
+	)
 	(wire
 		(pts
-			(xy 104.14 82.55) (xy 104.14 95.25)
+			(xy 87.63 91.44) (xy 87.63 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1232,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 83.82) (xy 168.91 96.52)
+			(xy 67.31 91.44) (xy 67.31 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1132,7 +1242,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 96.52) (xy 201.93 109.22)
+			(xy 72.39 59.69) (xy 90.17 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "011a745c-dc0d-47fb-8c9e-49041d880141")
+	)
+	(wire
+		(pts
+			(xy 107.95 104.14) (xy 107.95 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1262,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 121.92) (xy 201.93 134.62)
+			(xy 107.95 129.54) (xy 107.95 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 82.55) (xy 119.38 95.25)
+			(xy 102.87 91.44) (xy 102.87 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1162,7 +1282,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 33.02) (xy 147.32 41.91)
+			(xy 92.71 45.72) (xy 92.71 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1172,7 +1292,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 121.92) (xy 184.15 134.62)
+			(xy 82.55 129.54) (xy 82.55 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1182,7 +1302,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 120.65) (xy 71.12 133.35)
+			(xy 113.03 68.58) (xy 123.19 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b909c98-6bb8-4378-80db-2e21b7e624e8")
+	)
+	(wire
+		(pts
+			(xy 46.99 129.54) (xy 46.99 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1322,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 109.22) (xy 217.17 121.92)
+			(xy 123.19 116.84) (xy 123.19 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1202,7 +1332,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 107.95) (xy 104.14 120.65)
+			(xy 27.94 116.84) (xy 27.94 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23f71072-838f-4635-b512-1b7fbfdcff97")
+	)
+	(wire
+		(pts
+			(xy 87.63 116.84) (xy 87.63 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1212,17 +1352,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 52.07) (xy 149.86 55.88)
+			(xy 27.94 45.72) (xy 92.71 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b887a3e-51b2-4d74-9d76-8f729c82adcb")
+		(uuid "32e94a20-63f5-425c-b315-74e518180de8")
 	)
 	(wire
 		(pts
-			(xy 86.36 95.25) (xy 86.36 107.95)
+			(xy 62.23 104.14) (xy 62.23 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1232,7 +1372,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 120.65) (xy 104.14 133.35)
+			(xy 87.63 129.54) (xy 87.63 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1242,7 +1382,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 83.82) (xy 201.93 96.52)
+			(xy 95.25 59.69) (xy 113.03 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b12b80-e5c8-46ef-947a-043e948b5452")
+	)
+	(wire
+		(pts
+			(xy 107.95 91.44) (xy 107.95 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1252,17 +1402,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 55.88) (xy 165.1 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46225b19-be0b-4ef5-b131-76c4eb1c7ab5")
-	)
-	(wire
-		(pts
-			(xy 119.38 107.95) (xy 119.38 120.65)
+			(xy 102.87 116.84) (xy 102.87 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1272,7 +1412,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 83.82) (xy 184.15 96.52)
+			(xy 82.55 91.44) (xy 82.55 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1282,7 +1422,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 121.92) (xy 168.91 134.62)
+			(xy 67.31 129.54) (xy 67.31 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1292,7 +1432,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 109.22) (xy 184.15 121.92)
+			(xy 82.55 116.84) (xy 82.55 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1302,7 +1442,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 86.36 120.65)
+			(xy 62.23 116.84) (xy 62.23 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1312,17 +1452,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 60.96) (xy 217.17 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66c83394-11cb-482f-9cae-269af5053add")
-	)
-	(wire
-		(pts
-			(xy 168.91 109.22) (xy 168.91 121.92)
+			(xy 67.31 116.84) (xy 67.31 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1332,7 +1462,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 55.88) (xy 165.1 60.96)
+			(xy 113.03 59.69) (xy 113.03 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1342,27 +1472,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 55.88) (xy 132.08 55.88)
+			(xy 72.39 68.58) (xy 82.55 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cd975e9-48e1-4c2f-b719-7ddc56113689")
+		(uuid "751b977b-39e8-4cc6-ae04-34061e61fa77")
 	)
 	(wire
 		(pts
-			(xy 119.38 60.96) (xy 165.1 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e13ae44-fca5-4187-a381-b2dbd67e28bf")
-	)
-	(wire
-		(pts
-			(xy 71.12 82.55) (xy 71.12 95.25)
+			(xy 46.99 91.44) (xy 46.99 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1372,7 +1492,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 133.35) (xy 71.12 139.7)
+			(xy 46.99 142.24) (xy 46.99 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1382,7 +1502,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 66.04) (xy 86.36 82.55)
+			(xy 62.23 68.58) (xy 62.23 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1392,7 +1512,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 109.22) (xy 201.93 121.92)
+			(xy 107.95 116.84) (xy 107.95 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1402,17 +1522,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 52.07) (xy 144.78 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89e675a9-209f-4ac7-bc44-0c0f3a793e3c")
-	)
-	(wire
-		(pts
-			(xy 104.14 133.35) (xy 104.14 139.7)
+			(xy 87.63 142.24) (xy 87.63 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1422,7 +1532,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 95.25) (xy 104.14 107.95)
+			(xy 87.63 104.14) (xy 87.63 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1432,17 +1542,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 33.02) (xy 120.65 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fbfcdb7-4e7d-4b36-b2d4-cbfcb9d24a11")
-	)
-	(wire
-		(pts
-			(xy 168.91 134.62) (xy 168.91 140.97)
+			(xy 67.31 142.24) (xy 67.31 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1452,7 +1552,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 60.96) (xy 217.17 83.82)
+			(xy 123.19 68.58) (xy 123.19 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1462,7 +1562,17 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 83.82) (xy 217.17 96.52)
+			(xy 102.87 68.58) (xy 113.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0c47d4d-ea77-4eca-b219-7ac9416ea98c")
+	)
+	(wire
+		(pts
+			(xy 123.19 91.44) (xy 123.19 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1472,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 95.25) (xy 119.38 107.95)
+			(xy 102.87 104.14) (xy 102.87 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1482,7 +1592,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 66.04) (xy 132.08 66.04)
+			(xy 62.23 68.58) (xy 72.39 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1492,7 +1602,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 120.65) (xy 119.38 133.35)
+			(xy 102.87 129.54) (xy 102.87 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1502,7 +1612,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 66.04) (xy 132.08 55.88)
+			(xy 72.39 68.58) (xy 72.39 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1512,7 +1622,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 120.65) (xy 86.36 133.35)
+			(xy 62.23 129.54) (xy 62.23 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1522,7 +1632,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 96.52) (xy 217.17 109.22)
+			(xy 123.19 104.14) (xy 123.19 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1532,7 +1642,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 121.92) (xy 217.17 134.62)
+			(xy 123.19 129.54) (xy 123.19 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1542,7 +1652,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 134.62) (xy 201.93 140.97)
+			(xy 27.94 45.72) (xy 27.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f50f2d-6e51-4c58-8773-28e6bae2d05e")
+	)
+	(wire
+		(pts
+			(xy 107.95 142.24) (xy 107.95 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1552,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 96.52) (xy 168.91 109.22)
+			(xy 67.31 104.14) (xy 67.31 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1562,7 +1682,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 66.04) (xy 184.15 83.82)
+			(xy 82.55 68.58) (xy 82.55 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1572,7 +1692,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 60.96) (xy 119.38 82.55)
+			(xy 102.87 68.58) (xy 102.87 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1582,7 +1702,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 107.95) (xy 71.12 120.65)
+			(xy 46.99 116.84) (xy 46.99 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1592,7 +1712,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 82.55) (xy 86.36 95.25)
+			(xy 62.23 91.44) (xy 62.23 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1602,7 +1722,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 96.52) (xy 184.15 109.22)
+			(xy 82.55 104.14) (xy 82.55 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1612,7 +1732,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 95.25) (xy 71.12 107.95)
+			(xy 46.99 104.14) (xy 46.99 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1620,49 +1740,8 @@
 		)
 		(uuid "f4a808ec-cdec-403b-89db-3c442d679705")
 	)
-	(wire
-		(pts
-			(xy 128.27 33.02) (xy 147.32 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8d3d078-f948-47b4-8dd3-2efc90aabca3")
-	)
-	(wire
-		(pts
-			(xy 184.15 66.04) (xy 132.08 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f955df50-4802-46ea-b776-254b47c672e3")
-	)
-	(text "blue LED"
-		(exclude_from_sim no)
-		(at 180.086 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "28f72dae-9614-4ebd-a94e-af61760dfaf6")
-	)
-	(text "red LED"
-		(exclude_from_sim no)
-		(at 116.84 48.006 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4bd9b01c-b6c3-44e2-bc30-f72d3288d402")
-	)
 	(label "3V Red"
-		(at 106.68 66.04 0)
-		(fields_autoplaced yes)
+		(at 72.39 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1672,8 +1751,7 @@
 		(uuid "155464a6-7e44-4ea5-b005-06e13ae27da9")
 	)
 	(label "3V blue"
-		(at 186.69 60.96 0)
-		(fields_autoplaced yes)
+		(at 113.03 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1684,7 +1762,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 139.7 0)
+		(at 87.63 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1693,7 +1771,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d496996-994d-4642-994a-66367d51a09d")
 		(property "Reference" "#PWR02"
-			(at 104.14 146.05 0)
+			(at 87.63 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1702,7 +1780,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 144.78 0)
+			(at 87.63 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1710,7 +1788,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 139.7 0)
+			(at 87.63 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1719,7 +1797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 139.7 0)
+			(at 87.63 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1728,7 +1806,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 139.7 0)
+			(at 87.63 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +1828,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 133.35 90)
+		(at 91.44 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1759,7 +1837,7 @@
 		(fields_autoplaced yes)
 		(uuid "18bc9434-c054-4484-95ea-c23402e3c234")
 		(property "Reference" "R10"
-			(at 107.95 127 90)
+			(at 91.44 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +1845,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 107.95 129.54 90)
+			(at 91.44 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1853,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 108.204 132.334 90)
+			(at 91.694 141.224 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1862,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 133.35 0)
+			(at 91.44 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +1871,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 133.35 0)
+			(at 91.44 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1802,7 +1880,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 107.95 133.35 0)
+			(at 91.44 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1827,7 +1905,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 82.55 82.55 0)
+		(at 58.42 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1836,7 +1914,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c1d02b3-f613-4963-a5fb-05f4593e8fbe")
 		(property "Reference" "D1"
-			(at 80.9625 76.2 0)
+			(at 56.8325 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,7 +1922,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 80.9625 78.74 0)
+			(at 56.8325 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1852,7 +1930,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 82.55 82.55 0)
+			(at 58.42 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1861,7 +1939,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 82.55 0)
+			(at 58.42 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1870,7 +1948,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 82.55 82.55 0)
+			(at 58.42 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1879,7 +1957,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 82.55 82.55 0)
+			(at 58.42 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1904,7 +1982,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 109.22 90)
+		(at 111.76 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1913,7 +1991,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d7d0420-8c84-47c0-8cf5-6bab0e70e0be")
 		(property "Reference" "R18"
-			(at 205.74 102.87 90)
+			(at 111.76 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1921,7 +1999,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 205.74 105.41 90)
+			(at 111.76 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +2007,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 205.994 108.204 90)
+			(at 112.014 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +2016,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 109.22 0)
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,7 +2025,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 109.22 0)
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +2034,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 205.74 109.22 0)
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1981,7 +2059,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 213.36 134.62 0)
+		(at 119.38 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1990,7 +2068,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f40d327-712c-4fe9-92e0-bf4b91425c91")
 		(property "Reference" "D20"
-			(at 211.7725 128.27 0)
+			(at 117.7925 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +2076,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 211.7725 130.81 0)
+			(at 117.7925 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2006,7 +2084,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 213.36 134.62 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,7 +2093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 134.62 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2102,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 213.36 134.62 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,7 +2111,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 213.36 134.62 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2058,7 +2136,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 180.34 109.22 0)
+		(at 78.74 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2067,7 +2145,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f7d5ae7-1cc4-47ac-9f61-6318c8a48880")
 		(property "Reference" "D13"
-			(at 178.7525 102.87 0)
+			(at 77.1525 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2075,7 +2153,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 178.7525 105.41 0)
+			(at 77.1525 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,7 +2161,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 180.34 109.22 0)
+			(at 78.74 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2092,7 +2170,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 109.22 0)
+			(at 78.74 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2101,7 +2179,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 180.34 109.22 0)
+			(at 78.74 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2110,7 +2188,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 180.34 109.22 0)
+			(at 78.74 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2135,7 +2213,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 134.62 90)
+		(at 71.12 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2144,7 +2222,7 @@
 		(fields_autoplaced yes)
 		(uuid "20c13e1b-38f9-4a3b-99ba-0f80aef23c9b")
 		(property "Reference" "R15"
-			(at 172.72 128.27 90)
+			(at 71.12 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2152,7 +2230,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 172.72 130.81 90)
+			(at 71.12 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,7 +2238,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 172.974 133.604 90)
+			(at 71.374 141.224 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +2247,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 134.62 0)
+			(at 71.12 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +2256,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 134.62 0)
+			(at 71.12 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +2265,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 172.72 134.62 0)
+			(at 71.12 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,7 +2290,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 82.55 90)
+		(at 91.44 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2221,7 +2299,7 @@
 		(fields_autoplaced yes)
 		(uuid "229ceac8-c2d3-4264-8535-5a4bd9a2d044")
 		(property "Reference" "R6"
-			(at 107.95 76.2 90)
+			(at 91.44 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2229,7 +2307,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 107.95 78.74 90)
+			(at 91.44 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2315,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 108.204 81.534 90)
+			(at 91.694 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2246,7 +2324,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 82.55 0)
+			(at 91.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2333,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 82.55 0)
+			(at 91.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,7 +2342,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 107.95 82.55 0)
+			(at 91.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +2367,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 83.82 90)
+		(at 111.76 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2298,7 +2376,7 @@
 		(fields_autoplaced yes)
 		(uuid "29e42ccf-b463-44bb-82ee-b9fa2d8a1786")
 		(property "Reference" "R16"
-			(at 205.74 77.47 90)
+			(at 111.76 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2306,7 +2384,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 205.74 80.01 90)
+			(at 111.76 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2314,7 +2392,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 205.994 82.804 90)
+			(at 112.014 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2323,7 +2401,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 83.82 0)
+			(at 111.76 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +2410,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 83.82 0)
+			(at 111.76 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,7 +2419,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 205.74 83.82 0)
+			(at 111.76 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2366,7 +2444,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 115.57 120.65 0)
+		(at 99.06 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2375,7 +2453,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a0132e4-6610-4af7-8ec8-61704b6fdac1")
 		(property "Reference" "D9"
-			(at 113.9825 114.3 0)
+			(at 97.4725 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2383,7 +2461,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 113.9825 116.84 0)
+			(at 97.4725 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2469,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 115.57 120.65 0)
+			(at 99.06 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +2478,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 120.65 0)
+			(at 99.06 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2409,7 +2487,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 120.65 0)
+			(at 99.06 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,7 +2496,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 115.57 120.65 0)
+			(at 99.06 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2443,7 +2521,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 82.55 107.95 0)
+		(at 58.42 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2452,7 +2530,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ba4ea9c-2807-4d55-84fc-303aabe63bfc")
 		(property "Reference" "D3"
-			(at 80.9625 101.6 0)
+			(at 56.8325 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,7 +2538,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 80.9625 104.14 0)
+			(at 56.8325 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,7 +2546,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 82.55 107.95 0)
+			(at 58.42 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2477,7 +2555,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 107.95 0)
+			(at 58.42 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2486,7 +2564,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 82.55 107.95 0)
+			(at 58.42 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2495,7 +2573,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 82.55 107.95 0)
+			(at 58.42 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +2598,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 180.34 134.62 0)
+		(at 78.74 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2529,7 +2607,7 @@
 		(fields_autoplaced yes)
 		(uuid "301a682a-a621-44ff-bd8a-c7e0f1bde7be")
 		(property "Reference" "D15"
-			(at 178.7525 128.27 0)
+			(at 77.1525 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,7 +2615,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 178.7525 130.81 0)
+			(at 77.1525 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2545,7 +2623,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 180.34 134.62 0)
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,7 +2632,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 134.62 0)
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,7 +2641,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 180.34 134.62 0)
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2572,7 +2650,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 180.34 134.62 0)
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2675,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 63.5 26.67 0)
+		(at 26.67 26.67 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -2606,7 +2684,7 @@
 		(fields_autoplaced yes)
 		(uuid "32214cea-11e4-4d1e-99a7-bbca9b7988d5")
 		(property "Reference" "H1"
-			(at 66.04 25.3999 0)
+			(at 29.21 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +2693,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 66.04 27.9399 0)
+			(at 29.21 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2624,7 +2702,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.5mm"
-			(at 63.5 26.67 0)
+			(at 26.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2633,7 +2711,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 26.67 0)
+			(at 26.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,7 +2720,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 63.5 26.67 0)
+			(at 26.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +2729,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 63.5 26.67 0)
+			(at 26.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2670,7 +2748,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 109.22 90)
+		(at 71.12 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2679,7 +2757,7 @@
 		(fields_autoplaced yes)
 		(uuid "343473d9-4b87-4f23-88d5-895462f86062")
 		(property "Reference" "R13"
-			(at 172.72 102.87 90)
+			(at 71.12 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,7 +2765,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 172.72 105.41 90)
+			(at 71.12 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2695,7 +2773,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 172.974 108.204 90)
+			(at 71.374 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,7 +2782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 109.22 0)
+			(at 71.12 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +2791,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 109.22 0)
+			(at 71.12 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2800,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 172.72 109.22 0)
+			(at 71.12 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,7 +2825,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 96.52 90)
+		(at 71.12 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2756,7 +2834,7 @@
 		(fields_autoplaced yes)
 		(uuid "35616558-8cce-4e99-a449-931e5f510567")
 		(property "Reference" "R12"
-			(at 172.72 90.17 90)
+			(at 71.12 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,7 +2842,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 172.72 92.71 90)
+			(at 71.12 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,7 +2850,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 172.974 95.504 90)
+			(at 71.374 103.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,7 +2859,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 96.52 0)
+			(at 71.12 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2790,7 +2868,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 96.52 0)
+			(at 71.12 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2799,7 +2877,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 172.72 96.52 0)
+			(at 71.12 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,7 +2902,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 140.97 0)
+		(at 107.95 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2833,7 +2911,7 @@
 		(fields_autoplaced yes)
 		(uuid "36dc1d41-4151-447d-ba01-761852f03132")
 		(property "Reference" "#PWR05"
-			(at 201.93 147.32 0)
+			(at 107.95 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2842,7 +2920,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 146.05 0)
+			(at 107.95 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +2928,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 140.97 0)
+			(at 107.95 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 140.97 0)
+			(at 107.95 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +2946,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 140.97 0)
+			(at 107.95 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +2968,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 96.52 90)
+		(at 111.76 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2899,7 +2977,7 @@
 		(fields_autoplaced yes)
 		(uuid "40a55733-ffa3-4fab-ab03-26240accba6d")
 		(property "Reference" "R17"
-			(at 205.74 90.17 90)
+			(at 111.76 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,7 +2985,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 205.74 92.71 90)
+			(at 111.76 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +2993,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 205.994 95.504 90)
+			(at 112.014 103.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2924,7 +3002,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 96.52 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +3011,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 96.52 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +3020,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 205.74 96.52 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2967,7 +3045,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 74.93 120.65 90)
+		(at 50.8 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2976,7 +3054,7 @@
 		(fields_autoplaced yes)
 		(uuid "48d4b9a1-df97-44f0-97c7-1332778cffa6")
 		(property "Reference" "R4"
-			(at 74.93 114.3 90)
+			(at 50.8 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2984,7 +3062,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 74.93 116.84 90)
+			(at 50.8 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2992,7 +3070,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.184 119.634 90)
+			(at 51.054 128.524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,7 +3079,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 120.65 0)
+			(at 50.8 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3010,7 +3088,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 74.93 120.65 0)
+			(at 50.8 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3019,7 +3097,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 74.93 120.65 0)
+			(at 50.8 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3044,7 +3122,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 82.55 95.25 0)
+		(at 58.42 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3053,7 +3131,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b82e3a2-cd02-4c7a-aee8-935282df05ba")
 		(property "Reference" "D2"
-			(at 80.9625 88.9 0)
+			(at 56.8325 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3061,7 +3139,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 80.9625 91.44 0)
+			(at 56.8325 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3069,7 +3147,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 82.55 95.25 0)
+			(at 58.42 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3078,7 +3156,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 95.25 0)
+			(at 58.42 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3087,7 +3165,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 82.55 95.25 0)
+			(at 58.42 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3096,7 +3174,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 82.55 95.25 0)
+			(at 58.42 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3199,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 115.57 107.95 0)
+		(at 99.06 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3130,7 +3208,7 @@
 		(fields_autoplaced yes)
 		(uuid "4cdf8874-0b6b-4489-b8ed-a57aaad82cc1")
 		(property "Reference" "D8"
-			(at 113.9825 101.6 0)
+			(at 97.4725 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3138,7 +3216,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 113.9825 104.14 0)
+			(at 97.4725 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3224,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 115.57 107.95 0)
+			(at 99.06 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3155,7 +3233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 107.95 0)
+			(at 99.06 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3164,7 +3242,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 107.95 0)
+			(at 99.06 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3173,7 +3251,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 115.57 107.95 0)
+			(at 99.06 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3198,7 +3276,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 115.57 133.35 0)
+		(at 99.06 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3207,7 +3285,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e4d1dcb-2661-46cd-99f4-f920342e552c")
 		(property "Reference" "D10"
-			(at 113.9825 127 0)
+			(at 97.4725 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3215,7 +3293,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 113.9825 129.54 0)
+			(at 97.4725 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3301,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 115.57 133.35 0)
+			(at 99.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3232,7 +3310,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 133.35 0)
+			(at 99.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3319,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 133.35 0)
+			(at 99.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3250,7 +3328,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 115.57 133.35 0)
+			(at 99.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +3353,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 74.93 82.55 90)
+		(at 50.8 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3284,7 +3362,7 @@
 		(fields_autoplaced yes)
 		(uuid "5633edb5-cb2e-45ef-a8d8-c8ea0909c527")
 		(property "Reference" "R1"
-			(at 74.93 76.2 90)
+			(at 50.8 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3292,7 +3370,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 74.93 78.74 90)
+			(at 50.8 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3300,7 +3378,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.184 81.534 90)
+			(at 51.054 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3309,7 +3387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 82.55 0)
+			(at 50.8 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,7 +3396,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 74.93 82.55 0)
+			(at 50.8 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3327,7 +3405,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 74.93 82.55 0)
+			(at 50.8 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3352,7 +3430,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 82.55 120.65 0)
+		(at 58.42 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3361,7 +3439,7 @@
 		(fields_autoplaced yes)
 		(uuid "63860f49-be76-43f6-9b14-e9b75147957a")
 		(property "Reference" "D4"
-			(at 80.9625 114.3 0)
+			(at 56.8325 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3369,7 +3447,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 80.9625 116.84 0)
+			(at 56.8325 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +3455,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 82.55 120.65 0)
+			(at 58.42 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3386,7 +3464,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 120.65 0)
+			(at 58.42 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3395,7 +3473,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 82.55 120.65 0)
+			(at 58.42 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3482,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 82.55 120.65 0)
+			(at 58.42 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3429,7 +3507,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 82.55 133.35 0)
+		(at 58.42 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3438,7 +3516,7 @@
 		(fields_autoplaced yes)
 		(uuid "65c175be-ead5-4b34-955f-8ff1a7400e46")
 		(property "Reference" "D5"
-			(at 80.9625 127 0)
+			(at 56.8325 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +3524,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 80.9625 129.54 0)
+			(at 56.8325 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3454,7 +3532,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 82.55 133.35 0)
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 133.35 0)
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3550,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 82.55 133.35 0)
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3481,7 +3559,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 82.55 133.35 0)
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +3584,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 213.36 96.52 0)
+		(at 119.38 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3515,7 +3593,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b3d6c06-bb4c-4d35-b552-51b2d67b6136")
 		(property "Reference" "D17"
-			(at 211.7725 90.17 0)
+			(at 117.7925 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3523,7 +3601,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 211.7725 92.71 0)
+			(at 117.7925 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +3609,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 213.36 96.52 0)
+			(at 119.38 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3540,7 +3618,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 96.52 0)
+			(at 119.38 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3549,7 +3627,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 213.36 96.52 0)
+			(at 119.38 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3558,7 +3636,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 213.36 96.52 0)
+			(at 119.38 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3583,7 +3661,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 74.93 107.95 90)
+		(at 50.8 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3592,7 +3670,7 @@
 		(fields_autoplaced yes)
 		(uuid "6dbbbb53-9231-4348-ab2f-8e27f2a5dd2b")
 		(property "Reference" "R3"
-			(at 74.93 101.6 90)
+			(at 50.8 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3600,7 +3678,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 74.93 104.14 90)
+			(at 50.8 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,7 +3686,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.184 106.934 90)
+			(at 51.054 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,7 +3695,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 107.95 0)
+			(at 50.8 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3704,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 74.93 107.95 0)
+			(at 50.8 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,7 +3713,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 74.93 107.95 0)
+			(at 50.8 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +3738,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 232.41 152.4 0)
+		(at 44.45 33.02 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3669,7 +3747,7 @@
 		(fields_autoplaced yes)
 		(uuid "6dfd81d5-ac7d-4f24-a818-d48dbf7c6b52")
 		(property "Reference" "H4"
-			(at 234.95 151.1299 0)
+			(at 46.99 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3678,7 +3756,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 234.95 153.6699 0)
+			(at 46.99 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3687,7 +3765,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.5mm"
-			(at 232.41 152.4 0)
+			(at 44.45 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3696,7 +3774,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 152.4 0)
+			(at 44.45 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3705,7 +3783,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 232.41 152.4 0)
+			(at 44.45 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,7 +3792,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 232.41 152.4 0)
+			(at 44.45 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +3811,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 213.36 83.82 0)
+		(at 119.38 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3742,7 +3820,7 @@
 		(fields_autoplaced yes)
 		(uuid "70421a19-490e-48b3-8013-05a375dda8b1")
 		(property "Reference" "D16"
-			(at 211.7725 77.47 0)
+			(at 117.7925 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,7 +3828,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 211.7725 80.01 0)
+			(at 117.7925 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3758,7 +3836,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 213.36 83.82 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3767,7 +3845,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 83.82 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3776,7 +3854,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 213.36 83.82 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3785,7 +3863,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 213.36 83.82 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,7 +3888,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 180.34 83.82 0)
+		(at 78.74 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3819,7 +3897,7 @@
 		(fields_autoplaced yes)
 		(uuid "775a2d3c-b48e-4a73-88ac-ec3c0181a614")
 		(property "Reference" "D11"
-			(at 178.7525 77.47 0)
+			(at 77.1525 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3827,7 +3905,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 178.7525 80.01 0)
+			(at 77.1525 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3835,7 +3913,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 180.34 83.82 0)
+			(at 78.74 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3844,7 +3922,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 83.82 0)
+			(at 78.74 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3853,7 +3931,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 180.34 83.82 0)
+			(at 78.74 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3862,7 +3940,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 180.34 83.82 0)
+			(at 78.74 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3887,7 +3965,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 83.82 90)
+		(at 71.12 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3896,7 +3974,7 @@
 		(fields_autoplaced yes)
 		(uuid "7771d977-f70f-4931-85c2-afb79704345a")
 		(property "Reference" "R11"
-			(at 172.72 77.47 90)
+			(at 71.12 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3904,7 +3982,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 172.72 80.01 90)
+			(at 71.12 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +3990,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 172.974 82.804 90)
+			(at 71.374 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3921,7 +3999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 83.82 0)
+			(at 71.12 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3930,7 +4008,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 83.82 0)
+			(at 71.12 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3939,7 +4017,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 172.72 83.82 0)
+			(at 71.12 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +4042,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 74.93 95.25 90)
+		(at 50.8 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3973,7 +4051,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c3eefd2-9d76-4470-85e2-df78286bd051")
 		(property "Reference" "R2"
-			(at 74.93 88.9 90)
+			(at 50.8 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +4059,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 74.93 91.44 90)
+			(at 50.8 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3989,7 +4067,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.184 94.234 90)
+			(at 51.054 103.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3998,7 +4076,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 95.25 0)
+			(at 50.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4007,7 +4085,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 74.93 95.25 0)
+			(at 50.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4016,7 +4094,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 74.93 95.25 0)
+			(at 50.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4041,7 +4119,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 180.34 96.52 0)
+		(at 78.74 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4050,7 +4128,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e5d99ad-e0a3-42e0-8f2f-21d16f6f540d")
 		(property "Reference" "D12"
-			(at 178.7525 90.17 0)
+			(at 77.1525 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4058,7 +4136,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 178.7525 92.71 0)
+			(at 77.1525 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4144,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 180.34 96.52 0)
+			(at 78.74 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4153,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 96.52 0)
+			(at 78.74 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4084,7 +4162,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 180.34 96.52 0)
+			(at 78.74 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4093,7 +4171,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 180.34 96.52 0)
+			(at 78.74 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,7 +4196,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 213.36 121.92 0)
+		(at 119.38 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4127,7 +4205,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ab868d4-1449-41b4-ba15-62abf0a26ce1")
 		(property "Reference" "D19"
-			(at 211.7725 115.57 0)
+			(at 117.7925 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4135,7 +4213,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 211.7725 118.11 0)
+			(at 117.7925 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,7 +4221,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 213.36 121.92 0)
+			(at 119.38 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +4230,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 121.92 0)
+			(at 119.38 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +4239,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 213.36 121.92 0)
+			(at 119.38 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,7 +4248,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 213.36 121.92 0)
+			(at 119.38 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4195,7 +4273,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 121.92 90)
+		(at 111.76 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4204,7 +4282,7 @@
 		(fields_autoplaced yes)
 		(uuid "8dff9c55-6340-48d1-859e-6f9da9e4ca27")
 		(property "Reference" "R19"
-			(at 205.74 115.57 90)
+			(at 111.76 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4212,7 +4290,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 205.74 118.11 90)
+			(at 111.76 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4298,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 205.994 120.904 90)
+			(at 112.014 128.524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4229,7 +4307,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 121.92 0)
+			(at 111.76 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,7 +4316,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 121.92 0)
+			(at 111.76 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,7 +4325,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 205.74 121.92 0)
+			(at 111.76 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4272,7 +4350,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 233.68 26.67 0)
+		(at 44.45 26.67 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4281,7 +4359,7 @@
 		(fields_autoplaced yes)
 		(uuid "92544793-57f7-44f8-80c3-4412c79e15fb")
 		(property "Reference" "H2"
-			(at 236.22 25.3999 0)
+			(at 46.99 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4290,7 +4368,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 236.22 27.9399 0)
+			(at 46.99 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4299,7 +4377,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.5mm"
-			(at 233.68 26.67 0)
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +4386,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 26.67 0)
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4317,7 +4395,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 233.68 26.67 0)
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4326,7 +4404,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 233.68 26.67 0)
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4423,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 115.57 95.25 0)
+		(at 99.06 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4354,7 +4432,7 @@
 		(fields_autoplaced yes)
 		(uuid "a015230a-5224-4af2-8055-223f74980e31")
 		(property "Reference" "D7"
-			(at 113.9825 88.9 0)
+			(at 97.4725 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4440,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 113.9825 91.44 0)
+			(at 97.4725 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4448,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 115.57 95.25 0)
+			(at 99.06 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,7 +4457,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 95.25 0)
+			(at 99.06 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +4466,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 95.25 0)
+			(at 99.06 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,7 +4475,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 115.57 95.25 0)
+			(at 99.06 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,32 +4500,33 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 123.19 33.02 270)
+		(at 27.94 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a2599913-208f-45b5-a90c-bfeb69045b88")
 		(property "Reference" "BT1"
-			(at 125.0315 25.4 90)
+			(at 31.75 111.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 125.0315 27.94 90)
+			(at 31.75 113.7284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Battery:BatteryHolder_Keystone_2468_2xAAA"
-			(at 124.714 33.02 90)
+			(at 27.94 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,7 +4535,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.714 33.02 90)
+			(at 27.94 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4465,7 +4544,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 123.19 33.02 0)
+			(at 27.94 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4474,7 +4553,7 @@
 			)
 		)
 		(property "Mouser Part Number" "613-MN1500-144"
-			(at 123.19 33.02 0)
+			(at 27.94 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4499,7 +4578,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 107.95 90)
+		(at 91.44 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4508,7 +4587,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb59f670-1415-4d8e-9be1-a483add2c709")
 		(property "Reference" "R8"
-			(at 107.95 101.6 90)
+			(at 91.44 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4595,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 107.95 104.14 90)
+			(at 91.44 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4524,7 +4603,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 108.204 106.934 90)
+			(at 91.694 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4533,7 +4612,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 107.95 0)
+			(at 91.44 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4542,7 +4621,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 107.95 0)
+			(at 91.44 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4551,7 +4630,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 107.95 107.95 0)
+			(at 91.44 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4655,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 213.36 109.22 0)
+		(at 119.38 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4585,7 +4664,7 @@
 		(fields_autoplaced yes)
 		(uuid "c38dcb12-e397-4a7d-9ea9-7f65026860ff")
 		(property "Reference" "D18"
-			(at 211.7725 102.87 0)
+			(at 117.7925 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,7 +4672,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 211.7725 105.41 0)
+			(at 117.7925 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4601,7 +4680,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 213.36 109.22 0)
+			(at 119.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4610,7 +4689,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 109.22 0)
+			(at 119.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4619,7 +4698,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 213.36 109.22 0)
+			(at 119.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4707,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 213.36 109.22 0)
+			(at 119.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4653,7 +4732,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 33.02 0)
+		(at 27.94 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4662,7 +4741,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6397afd-d6d9-43bd-841d-cb9ecefd2753")
 		(property "Reference" "#PWR03"
-			(at 110.49 39.37 0)
+			(at 27.94 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4671,7 +4750,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 38.1 0)
+			(at 27.94 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,7 +4758,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 33.02 0)
+			(at 27.94 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4688,7 +4767,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 33.02 0)
+			(at 27.94 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +4776,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 33.02 0)
+			(at 27.94 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4798,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 134.62 90)
+		(at 111.76 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4728,7 +4807,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3aa1556-d773-47c5-b84b-0708b95b10be")
 		(property "Reference" "R20"
-			(at 205.74 128.27 90)
+			(at 111.76 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +4815,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 205.74 130.81 90)
+			(at 111.76 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4744,7 +4823,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 205.994 133.604 90)
+			(at 112.014 141.224 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4753,7 +4832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 134.62 0)
+			(at 111.76 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4762,7 +4841,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 134.62 0)
+			(at 111.76 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +4850,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 205.74 134.62 0)
+			(at 111.76 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,7 +4875,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 74.93 133.35 90)
+		(at 50.8 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4805,7 +4884,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7a05f3f-02d8-4303-802f-0db2864126ff")
 		(property "Reference" "R5"
-			(at 74.93 127 90)
+			(at 50.8 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,7 +4892,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 74.93 129.54 90)
+			(at 50.8 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +4900,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.184 132.334 90)
+			(at 51.054 141.224 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,7 +4909,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 133.35 0)
+			(at 50.8 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4839,7 +4918,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 74.93 133.35 0)
+			(at 50.8 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,7 +4927,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 74.93 133.35 0)
+			(at 50.8 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +4952,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 120.65 90)
+		(at 91.44 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4882,7 +4961,7 @@
 		(fields_autoplaced yes)
 		(uuid "d93521ff-ead6-466d-8737-a00bc76408c6")
 		(property "Reference" "R9"
-			(at 107.95 114.3 90)
+			(at 91.44 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +4969,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 107.95 116.84 90)
+			(at 91.44 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,7 +4977,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 108.204 119.634 90)
+			(at 91.694 128.524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4907,7 +4986,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 120.65 0)
+			(at 91.44 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +4995,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 120.65 0)
+			(at 91.44 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,7 +5004,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 107.95 120.65 0)
+			(at 91.44 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4950,7 +5029,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 121.92 90)
+		(at 71.12 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4959,7 +5038,7 @@
 		(fields_autoplaced yes)
 		(uuid "db1b0091-952a-4734-a2fb-75d721e463db")
 		(property "Reference" "R14"
-			(at 172.72 115.57 90)
+			(at 71.12 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,7 +5046,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 172.72 118.11 90)
+			(at 71.12 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4975,7 +5054,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 172.974 120.904 90)
+			(at 71.374 128.524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4984,7 +5063,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 121.92 0)
+			(at 71.12 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4993,7 +5072,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 121.92 0)
+			(at 71.12 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5002,7 +5081,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 172.72 121.92 0)
+			(at 71.12 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5027,7 +5106,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 139.7 0)
+		(at 46.99 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5036,7 +5115,7 @@
 		(fields_autoplaced yes)
 		(uuid "e009c343-340a-47e3-ba65-b808e75922c1")
 		(property "Reference" "#PWR01"
-			(at 71.12 146.05 0)
+			(at 46.99 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5045,7 +5124,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 144.78 0)
+			(at 46.99 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5053,7 +5132,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 139.7 0)
+			(at 46.99 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5062,7 +5141,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 139.7 0)
+			(at 46.99 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,7 +5150,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 139.7 0)
+			(at 46.99 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,7 +5172,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 140.97 0)
+		(at 67.31 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5102,7 +5181,7 @@
 		(fields_autoplaced yes)
 		(uuid "e22c43b6-bcbe-4c58-94c7-d18e30da0684")
 		(property "Reference" "#PWR04"
-			(at 168.91 147.32 0)
+			(at 67.31 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,7 +5190,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 146.05 0)
+			(at 67.31 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5119,7 +5198,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 140.97 0)
+			(at 67.31 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 140.97 0)
+			(at 67.31 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5137,7 +5216,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 140.97 0)
+			(at 67.31 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5159,7 +5238,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 95.25 90)
+		(at 91.44 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5168,7 +5247,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7db8bc0-1860-42d9-94fb-60deed66a236")
 		(property "Reference" "R7"
-			(at 107.95 88.9 90)
+			(at 91.44 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5176,7 +5255,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 107.95 91.44 90)
+			(at 91.44 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5263,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 108.204 94.234 90)
+			(at 91.694 103.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5193,7 +5272,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 95.25 0)
+			(at 91.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5202,7 +5281,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 95.25 0)
+			(at 91.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5211,7 +5290,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-WSLP25125L000FEA"
-			(at 107.95 95.25 0)
+			(at 91.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5236,7 +5315,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 57.15 153.67 0)
+		(at 26.67 33.02 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5245,7 +5324,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8ac79b0-4483-4fca-99c6-9852c35c9893")
 		(property "Reference" "H3"
-			(at 59.69 152.3999 0)
+			(at 29.21 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +5333,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 59.69 154.9399 0)
+			(at 29.21 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,7 +5342,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.5mm"
-			(at 57.15 153.67 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,7 +5351,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 153.67 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,7 +5360,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 57.15 153.67 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5290,7 +5369,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 57.15 153.67 0)
+			(at 26.67 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +5388,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 180.34 121.92 0)
+		(at 78.74 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5318,7 +5397,7 @@
 		(fields_autoplaced yes)
 		(uuid "f30fcc90-bdb4-4a99-9a67-4c03e45ae00f")
 		(property "Reference" "D14"
-			(at 178.7525 115.57 0)
+			(at 77.1525 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,7 +5405,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 178.7525 118.11 0)
+			(at 77.1525 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5334,7 +5413,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 180.34 121.92 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5343,7 +5422,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 121.92 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5352,7 +5431,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 180.34 121.92 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5440,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 180.34 121.92 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,7 +5465,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 115.57 82.55 0)
+		(at 99.06 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5395,7 +5474,7 @@
 		(fields_autoplaced yes)
 		(uuid "fda83168-1c65-4065-8fdb-823ec3a2a66c")
 		(property "Reference" "D6"
-			(at 113.9825 76.2 0)
+			(at 97.4725 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5403,7 +5482,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 113.9825 78.74 0)
+			(at 97.4725 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5411,7 +5490,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 115.57 82.55 0)
+			(at 99.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5420,7 +5499,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 82.55 0)
+			(at 99.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5429,7 +5508,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 82.55 0)
+			(at 99.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,7 +5517,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-150060SS75000"
-			(at 115.57 82.55 0)
+			(at 99.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5463,7 +5542,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SP3T")
-		(at 147.32 46.99 270)
+		(at 92.71 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5472,7 +5551,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe475741-5171-4a47-aeea-36cca33bed65")
 		(property "Reference" "SW3"
-			(at 152.4 45.7199 90)
+			(at 97.79 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,7 +5560,7 @@
 			)
 		)
 		(property "Value" "SW_SP3T"
-			(at 152.4 48.2599 90)
+			(at 97.79 55.8799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,7 +5569,7 @@
 			)
 		)
 		(property "Footprint" "robomaster_footprints:EG1315AA"
-			(at 151.765 31.115 0)
+			(at 97.155 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5499,7 +5578,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 46.99 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5508,7 +5587,7 @@
 			)
 		)
 		(property "Description" "Switch, three position, single pole triple throw, 3 position switch, SP3T"
-			(at 147.32 46.99 0)
+			(at 92.71 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,4 +5621,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
