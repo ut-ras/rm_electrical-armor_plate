@@ -989,7 +989,7 @@
 		)
 		(uuid "4bd9b01c-b6c3-44e2-bc30-f72d3288d402")
 	)
-	(text "TODO:\n- Find Specific LED on Mouser\n- Tie together LED Cathodes\n- Replace LED Cathode Resistors with singular resistor"
+	(text "TODO:\n- Find Specific LED on Mouser\n- Do Resistance Calculation"
 		(exclude_from_sim no)
 		(at 34.798 75.692 0)
 		(effects
@@ -2770,6 +2770,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
@@ -4525,7 +4526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_Keystone_2468_2xAAA"
+		(property "Footprint" "Battery:BatteryHolder_Keystone_2466_1xAAA"
 			(at 27.94 112.776 90)
 			(effects
 				(font
