@@ -989,7 +989,7 @@
 		)
 		(uuid "4bd9b01c-b6c3-44e2-bc30-f72d3288d402")
 	)
-	(text "TODO:\n- Find Specific LED on Mouser\n- Do Resistance Calculation"
+	(text "TODO:\n- Find Specific LEDs on Mouser (0603 package, Red/Blue)\n- Using LED operating point, determine a good power rail voltage\n- Do Resistance Calculations\n- BOM (Mouser Links)"
 		(exclude_from_sim no)
 		(at 34.798 75.692 0)
 		(effects
